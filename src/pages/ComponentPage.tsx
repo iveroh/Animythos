@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { getComponentBySlug } from "../data/components";
+import Navbar from "../ui/Navbar";
 
 function ComponentPage() {
   const { slug } = useParams();
@@ -20,6 +21,7 @@ function ComponentPage() {
 
   return (
     <main>
+      <Navbar />
       <span>{component.category}</span>
 
       <h1>{component.name}</h1>

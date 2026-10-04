@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { components } from "../data/components";
+import Navbar from "../ui/Navbar";
 
 function ComponentsPage() {
   return (
     <main>
+      <Navbar />
       <h1>Components</h1>
 
       <p>Explore the available Three.js animations and effects.</p>
