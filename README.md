@@ -10,9 +10,7 @@ Animythos is both a component library and an interactive showcase.
 Each component has its own live demo, documentation, and example usage.
 </h3>
 
-<p align="center">
-  <img src="https://waveify.onrender.com/api/wave?color=%23007CF0&height=150&speed=4&width=1200&amplitude=20&frequency=2&waveType=default" alt="Wave Animation" />
-</p>
+![Wave Animation](https://waveify.onrender.com/api/wave?color=%23007CF0&height=150&speed=4&width=1200&amplitude=20&frequency=2&waveType=default)
 
 ---
 
