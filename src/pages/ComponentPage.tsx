@@ -11,8 +11,11 @@ function ComponentPage() {
 
   if (!component) {
     return (
-      <main>
-        <h1>Component not found</h1>
+      <main className="min-h-screen bg-[#16002e]">
+        <Navbar />
+        <h1 className="px-6 py-16 text-center text-3xl font-bold">
+          Component not found
+        </h1>
       </main>
     );
   }
@@ -20,15 +23,22 @@ function ComponentPage() {
   const Demo = component.demo;
 
   return (
-    <main>
+    <main className="min-h-screen bg-[#16002e]">
       <Navbar />
-      <span>{component.category}</span>
 
-      <h1>{component.name}</h1>
+      <section className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-16">
+        <span className="w-fit rounded-full bg-violet-500/20 px-3 py-1 text-xs font-medium tracking-wide text-violet-200">
+          {component.category}
+        </span>
 
-      <p>{component.description}</p>
+        <h1 className="text-4xl font-bold md:text-5xl">{component.name}</h1>
 
-      <Demo />
+        <p className="text-lg text-white/70">{component.description}</p>
+
+        <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-black/30">
+          <Demo />
+        </div>
+      </section>
     </main>
   );
 }

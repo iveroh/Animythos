@@ -2,12 +2,14 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-center gap-8 bg-gray-800 w-full h-20 text-2xl text-white">
-      <Link to="/">Animythos</Link>
+    <nav className="flex h-20 w-full items-center justify-center gap-8 border-b border-white/10 bg-black/30 text-xl text-white backdrop-blur-md">
+      <Link to="/" className="font-semibold transition hover:text-violet-300">
+        Animythos
+      </Link>
 
-      <div>
-        <Link to="/components">Components</Link>
-      </div>
+      <Link to="/components" className="text-white/80 transition hover:text-violet-300">
+        Components
+      </Link>
     </nav>
   );
 }
